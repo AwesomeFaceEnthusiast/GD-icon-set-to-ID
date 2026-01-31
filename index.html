@@ -1,0 +1,39 @@
+<img src="https://gdbrowser.com/iconkit/premade/cube_1.png" draggable="false" id="cubeImage">
+<img src="https://gdbrowser.com/iconkit/premade/ship_1.png" draggable="false" id="shipImage">
+<img src="https://gdbrowser.com/iconkit/premade/ball_1.png" draggable="false" id="ballImage">
+<img src="https://gdbrowser.com/iconkit/premade/ufo_1.png" draggable="false" id="ufoImage">
+<img src="https://gdbrowser.com/iconkit/premade/wave_1.png" draggable="false" id="waveImage">
+<img src="https://gdbrowser.com/iconkit/premade/robot_1.png" draggable="false" id="robotImage">
+<img src="https://gdbrowser.com/iconkit/premade/spider_1.png" draggable="false" id="spiderImage">
+<img src="https://gdbrowser.com/iconkit/premade/swing_1.png" draggable="false" id="swingImage">
+<img src="https://gdbrowser.com/iconkit/premade/jetpack_1.png" draggable="false" id="jetpackImage">
+<img src="https://gdbrowser.com/iconkit/items/trail_1.png" draggable="false" id="trailImage">
+<img src="https://gdbrowser.com/iconkit/items/shipFire_1.png" draggable="false" id="shipFireImage">
+<img src="https://gdbrowser.com/iconkit/items/deathEffect_1.png" draggable="false" id="deathEffectImage"><br>
+Cube: <input type="range" id="cubeRange" oninput="update('none')" min="1" max="485" value="1"><span id="cubeText">1</span> <button onclick="popUp(485, 'cube')">Set</button><br>
+Ship: <input type="range" id="shipRange" oninput="update('none')" min="1" max="169" value="1"><span id="shipText">1</span> <button onclick="popUp(169, 'ship')">Set</button><br>
+Ball: <input type="range" id="ballRange" oninput="update('none')" min="1" max="118" value="1"><span id="ballText">1</span> <button onclick="popUp(118, 'ball')">Set</button><br>
+UFO: <input type="range" id="ufoRange" oninput="update('none')" min="1" max="149" value="1"><span id="ufoText">1</span> <button onclick="popUp(149, 'ufo')">Set</button><br>
+Wave: <input type="range" id="waveRange" oninput="update('none')" min="1" max="96" value="1"><span id="waveText">1</span> <button onclick="popUp(96, 'wave')">Set</button><br>
+Robot: <input type="range" id="robotRange" oninput="update('none')" min="1" max="68" value="1"><span id="robotText">1</span> <button onclick="popUp(68, 'robot')">Set</button><br>
+Spider: <input type="range" id="spiderRange" oninput="update('none')" min="1" max="69" value="1"><span id="spiderText">1</span> <button onclick="popUp(69, 'spider')">Set</button><br>
+Swing: <input type="range" id="swingRange" oninput="update('none')" min="1" max="43" value="1"><span id="swingText">1</span> <button onclick="popUp(43, 'swing')">Set</button><br>
+Jetpack: <input type="range" id="jetpackRange" oninput="update('none')" min="1" max="8" value="1"><span id="jetpackText">1</span><br>
+Trail: <input type="range" id="trailRange" oninput="update('none')" min="1" max="7" value="1"><span id="trailText">1</span><br>
+Ship fire: <input type="range" id="shipFireRange" oninput="update('none')" min="1" max="6" value="1"><span id="shipFireText">1</span><br>
+<input type="checkbox" id="checkbox1" oninput="toggle(1)"><label for="checkbox1"><img src="https://gdbrowser.com/iconkit/items/item_18.png" style="height: 30px; filter: brightness(75%)" draggable="false" id="animOneImage"></label>
+<input type="checkbox" id="checkbox2" oninput="toggle(2)"><label for="checkbox2"><img src="https://gdbrowser.com/iconkit/items/item_19.png" style="height: 30px; filter: brightness(75%)" draggable="false" id="animTwoImage"></label>
+<input type="checkbox" id="checkbox3" oninput="toggle(3)"><label for="checkbox3"><img src="https://gdbrowser.com/iconkit/items/item_20.png" style="height: 30px; filter: brightness(75%)" draggable="false" id="animThreeImage"></label><br>
+Death effect: <input type="range" id="deathEffectRange" oninput="update('none')" min="1" max="20" value="1"><span id="deathEffectText">1</span><br>
+<input type="checkbox" id="checkbox4" oninput="toggle(4)"><label for="checkbox4"><img src="https://gdbrowser.com/assets/check-off.png" style="height: 30px" draggable="false" id="explodeImage">Explode</label><br>
+Primary color: <input type="range" id="primaryColorRange" oninput="update('none')" min="0" max="106" value="0"><span id="primaryColorText">0</span> <button onclick="popUp(106, 'primaryColor')">Set</button><div style="height: 30px; width: 30px; border: 1px white solid; background-color: #7dff00" id="primaryColorPreview"></div>
+Secondary color: <input type="range" id="secondaryColorRange" oninput="update('none')" min="0" max="106" value="0"><span id="secondaryColorText">0</span> <button onclick="popUp(106, 'secondaryColor')">Set</button><div style="height: 30px; width: 30px; border: 1px white solid; background-color: #7dff00" id="secondaryColorPreview"></div>
+Glow color: <input type="range" id="glowRange" oninput="update('none')" min="0" max="107" value="107"><span id="glowText">107</span> <button onclick="popUp(107, 'glow')">Set</button>(set to 107 if your glow is off)<div style="height: 30px; width: 30px; border: 1px white solid; background-color: transparent; display: flex; align-items: center; justify-content: center;" id="glowPreview">Off</div>
+<input type="checkbox" id="checkbox5" oninput="toggle(5)"><label for="checkbox5"><img src="https://gdbrowser.com/assets/check-off.png" style="height: 30px" draggable="false" id="miniImage">Default mini icons</label><br>
+<input type="checkbox" id="checkbox6" oninput="toggle(6)"><label for="checkbox6"><img src="https://gdbrowser.com/assets/check-off.png" style="height: 30px" draggable="false" id="spiderColorImage">Switch spider teleport color</label><br>
+<input type="checkbox" id="checkbox7" oninput="toggle(7)"><label for="checkbox7"><img src="https://gdbrowser.com/assets/check-off.png" style="height: 30px" draggable="false" id="dashColorImage">Switch dash fire color</label><br>
+<input type="checkbox" id="checkbox8" oninput="toggle(8)"><label for="checkbox8"><img src="https://gdbrowser.com/assets/check-off.png" style="height: 30px" draggable="false" id="waveColorImage">Switch wave trail color</label>
+<br><span id="iconSet">Your icon set ID: 1712</span>
+
+<link rel="styleSheet" href="style.css" />
+<script src="code.js"></script>
