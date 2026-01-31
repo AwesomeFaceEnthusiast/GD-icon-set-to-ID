@@ -1,0 +1,13 @@
+body {
+    background-color: #15202b;
+    color: white;
+    font-size: 15px;
+    font-family: monospace;
+}
+img {
+    height: 60px;
+    user-select: none;
+}
+input[type="checkbox"] {
+    display: none;
+}
