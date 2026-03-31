@@ -1,0 +1,40 @@
+<title>GD icon set to ID v2</title>
+<link rel="icon" href="https://gdbrowser.com/iconkit/premade/cube_1.png" />
+<small>All images are from GD Colon's website, <a href="https://gdbrowser.com/iconkit/" target="_blank">https://gdbrowser.com/iconkit/</a><br>
+Click on an image to set an icon's ID</small>
+
+<h1>Icons</h1>
+<button class="image" onclick="popup('cube', 1, 485, 'icon')"><img id="cubeImage" draggable="false"></button>
+<button class="image" onclick="popup('ship', 1, 169, 'icon')"><img id="shipImage" draggable="false"></button>
+<button class="image" onclick="popup('ball', 1, 118, 'icon')"><img id="ballImage" draggable="false"></button>
+<button class="image" onclick="popup('UFO', 1, 149, 'icon')"><img id="ufoImage" draggable="false"></button>
+<button class="image" onclick="popup('wave', 1, 96, 'icon')"><img id="waveImage" draggable="false"></button>
+<button class="image" onclick="popup('robot', 1, 68, 'icon')"><img id="robotImage" draggable="false"></button>
+<button class="image" onclick="popup('spider', 1, 69, 'icon')"><img id="spiderImage" draggable="false"></button>
+<button class="image" onclick="popup('swing', 1, 43, 'icon')"><img id="swingImage" draggable="false"></button>
+<button class="image" onclick="popup('jetpack', 1, 8, 'icon')"><img id="jetpackImage" draggable="false"></button>
+<h1>Effects</h1>
+<button class="image" onclick="popup('trail', 1, 7, 'effect')"><img id="trailImage" draggable="false"></button>
+<button class="image" onclick="popup('deathEffect', 1, 20, 'effect')"><img id="deathEffectImage" draggable="false"></button>
+<button class="image" onclick="popup('shipFire', 1, 6, 'effect')"><img id="shipFireImage" draggable="false"></button><br>
+<input id="anim1Check" type="checkbox" oninput="update()"><label for="anim1Check"><img id="anim1Image" style="height: 35px" src="https://gdbrowser.com/iconkit/items/item_18.png" draggable="false"></label>
+<input id="anim2Check" type="checkbox" oninput="update()"><label for="anim2Check"><img id="anim2Image" style="height: 35px" src="https://gdbrowser.com/iconkit/items/item_19.png" draggable="false"></label>
+<input id="anim3Check" type="checkbox" oninput="update()"><label for="anim3Check"><img id="anim3Image" style="height: 35px" src="https://gdbrowser.com/iconkit/items/item_20.png" draggable="false"></label><br>
+<input id="explodeCheck" type="checkbox" oninput="update()"><label for="explodeCheck"><img id="explodeImage" draggable="false">Expode</label>
+<h1>Colors</h1>
+<button class="image" onclick="popup('primary color', 0, 106, 'color')"><div id="pColorImage" class="colPreview">P</div></button>
+<button class="image" onclick="popup('secondary color', 0, 106, 'color')"><div id="sColorImage" class="colPreview">S</div></button>
+<button class="image" onclick="popup('glow', 0, 107, 'color')"><div id="gColorImage" class="colPreview">G</div></button><br>
+<small>Set glow color to 107 for "off".</small><br>
+<input id="miniCheck" type="checkbox" oninput="update()"><label for="miniCheck"><img id="miniImage" draggable="false">Default mini icons</label> |
+<input id="sptrailCheck" type="checkbox" oninput="update()"><label for="sptrailCheck"><img id="sptrailImage" draggable="false">Switch spider teleport color</label><br>
+<input id="dsfireCheck" type="checkbox" oninput="update()"><label for="dsfireCheck"><img id="dsfireImage" draggable="false">Switch dash fire color</label> |
+<input id="wvtrailCheck" type="checkbox" oninput="update()"><label for="wvtrailCheck"><img id="wvtrailImage" draggable="false">Switch wave trail color</label>
+<h1>Icon set ID</h1>
+<span id="decimalID"></span><br>
+<span id="base36ID"></span><br>
+<small>Note: Base36 is case insensitive, but it's more common to use lowercase.</small><br>
+<button onclick="importID()">Load an ID</button> | Has to be decimal, sorry. Use <a href="https://www.rapidtables.com/convert/number/base-converter.html?base1=36&base2=10" target="_blank">this</a> to convert Base36 to decimal.
+
+<link rel="stylesheet" href="style.css" />
+<script src="script.js"></script>
